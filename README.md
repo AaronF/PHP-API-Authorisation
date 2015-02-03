@@ -1,4 +1,4 @@
-### PHP-API-Authorisation
+### PHP API Authorisation
 
 An example of securing an API in PHP. I have included both the client side and the server side of things.
 
