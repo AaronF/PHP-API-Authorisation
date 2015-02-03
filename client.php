@@ -28,9 +28,12 @@ $data = $url.$value1.$value2.$value3.$timestamp;
 //Next we will generate the encrypted string that will be sent in the request
 $hashed_string = hash_hmac("sha256", $data, $private_api_key);
 
+echo "This is the hashed string we have generated: ".$hashed_string."<br><br>";
+
 if(class_exists('comms')){
 	//Post the request to server.php and output the response (you may need to change the localhost depending on where you are hosting this)
 	$comms = new comms;
+	echo "This is the response from the server: ";
 	echo($comms->sendPOST("http://localhost/server.php", array("value1" => $value1, "value2" => $value2, "value3" => $value3, "timestamp" => $timestamp,  "public_api_key" => $public_api_key, "hashed_string" => $hashed_string)));
 }
 ?>
