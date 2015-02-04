@@ -17,4 +17,4 @@ There are three errors it may give you, if the timestamp provided by client.php 
 Once you have it launched, take a look through client.php and server.php to see how it all works. I have tried to comment as much of the process as possible in an attempt to make it easier to read.
 
 #### To Note
-There are a number of things that could be done more efficiently but I have expanded it as much as possible to make it weasy to read. For example a lot of the 'If' statements could be combined and a lot of the variable names could be considerably shorted than they are.
+There are a number of things that could be done more efficiently but I have expanded it as much as possible to make it easy to read. For example a lot of the 'If' statements could be combined and a lot of the variable names could be considerably shorted than they are.
