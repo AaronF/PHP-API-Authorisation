@@ -23,11 +23,13 @@ $timestamp = time();
 //This is the URL we will be posting the request to
 $url = "http://localhost/server.php";
 
+//Here we put all of the data above (including the intended URL) into a single string
 $data = $url.$value1.$value2.$value3.$timestamp;
 
 //Next we will generate the encrypted string that will be sent in the request
 $hashed_string = hash_hmac("sha256", $data, $private_api_key);
 
+//Output so we can see the result on the client.php file
 echo "This is the hashed string we have generated: ".$hashed_string."<br><br>";
 
 if(class_exists('comms')){
